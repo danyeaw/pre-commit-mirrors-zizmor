@@ -1,0 +1,5 @@
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - zizmor=1.30.1

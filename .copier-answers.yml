@@ -1,0 +1,8 @@
+# This file is managed by Copier; DO NOT EDIT OR REMOVE.
+_commit: v0.1.12-42-ga967bbf
+_src_path: .
+conda_package: zizmor
+description: This hook runs zizmor.
+entry: zizmor
+tool: zizmor
+url: https://github.com/danyeaw/pre-commit-mirrors-zizmor

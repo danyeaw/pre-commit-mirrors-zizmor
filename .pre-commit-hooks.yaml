@@ -1,0 +1,5 @@
+- id: zizmor-conda
+  name: zizmor-conda
+  description: 'This hook runs zizmor.'
+  entry: zizmor
+  language: conda

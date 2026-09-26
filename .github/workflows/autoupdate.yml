@@ -26,9 +26,9 @@ jobs:
         id: versions
         run: |
           pkgname="$(yq '.dependencies[0]' environment.yml | grep -Eio '[a-z0-9_-]+' | head -n 1)"
-          old_version=$(micromamba list -n check-env "$pkgname" --json | jq -r '.[0].version')
+          old_version=$(micromamba list -n check-env "$pkgname" --json | jq -r '.packages[0].version')
           micromamba update -y -n check-env -a
-          new_version=$(micromamba list -n check-env "$pkgname" --json | jq -r '.[0].version')
+          new_version=$(micromamba list -n check-env "$pkgname" --json | jq -r '.packages[0].version')
           if [[ "$new_version" != "$old_version" ]]; then
             sed -i "s/$old_version/$new_version/g" environment.yml
             echo "pkgname=$pkgname" >> $GITHUB_OUTPUT

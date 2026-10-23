@@ -4,7 +4,7 @@ pre-commit hook of zizmor with conda as a `language` / package manager.
 
 For pre-commit: see [here](https://github.com/pre-commit/pre-commit)
 
-For zizmor: see [here](https://github.com/danyeaw/pre-commit-mirrors-zizmor)
+For zizmor: see [here](https://github.com/zizmorcore/zizmor)
 
 ## Using zizmor with pre-commit and conda:
 
